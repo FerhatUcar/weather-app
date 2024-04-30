@@ -22,13 +22,13 @@ const WeatherSearch = ({
   };
 
   return (
-    <form className="flex flex-col md:flex-row gap-2 mb-4" onSubmit={handleSubmit}>
+    <form className="max-w-[640px] flex flex-col md:flex-row gap-2 mb-4" onSubmit={handleSubmit}>
       <input
         type="text"
         value={city}
         onChange={handleChange}
         placeholder="Enter city name"
-        className="bg-zinc-800 border-2 border-zinc-500 text-white p-2 rounded-md"
+        className="w-full bg-zinc-800 border-2 border-zinc-500 text-white p-2 rounded-md"
       />
       <button className="rounded bg-amber-600 hover:bg-amber-700 px-4 py-2 transition-all" type="submit">Search</button>
     </form>
