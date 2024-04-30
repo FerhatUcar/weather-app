@@ -6,7 +6,7 @@ import { capitalizeFirstLetter } from "@/utils/capitalize";
 
 const WeatherCard = ({ weather }: { weather: WeatherData | null }) => (
   <MotionWrapper>
-    <div className="w-full max-w-[640px] pb-4 px-4 bg-gradient-to-r from-slate-800 to-slate-700 transition-all text-white shadow-xl rounded-lg border-2 border-slate-950">
+    <div className="w-full max-w-[640px] pb-4 px-4 bg-slate-800 transition-all text-white shadow-xl rounded-lg border-2 border-slate-950">
       {weather ? (
         <div>
           <div className="flex flex-row justify-between items-center">
