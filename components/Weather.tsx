@@ -5,9 +5,11 @@ import { WeatherData } from "@/types";
 import WeatherCard from "@/components/WeatherCard";
 import WeatherSearch from "@/components/WeatherSearch";
 import { normalizeCityName } from "@/utils/normalize";
-import { getData } from "@/utils/data";
 
 const DEFAULT_CITY = "Dordrecht";
+
+const getData = (city: string) =>
+  `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.NEXT_PUBLIC_API_KEY}&units=metric`;
 
 const Weather = () => {
   const [city, setCity] = useState(DEFAULT_CITY);

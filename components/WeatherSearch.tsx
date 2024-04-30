@@ -30,7 +30,7 @@ const WeatherSearch = ({
         placeholder="Enter city name"
         className="w-full bg-zinc-800 border-2 border-zinc-500 text-white p-2 rounded-md"
       />
-      <button className="rounded bg-amber-600 hover:bg-amber-700 px-4 py-2 transition-all" type="submit">Search</button>
+      <button className="rounded-md bg-amber-600 hover:bg-amber-700 px-4 transition-all" type="submit">Search</button>
     </form>
   );
 };
